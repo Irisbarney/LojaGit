@@ -85,24 +85,21 @@ footer {
 }
 
 /* INPUT DE PESQUISA */
-.pesquisa input {
-  display: flex;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  font-size: 15px;
-  outline: none;
-}
-
 /* I:logo de lupa*/
 .input-search {
   padding: 10px 40px 10px 10px;
-  font-size: 22.5px;
-  border-radius: 5px;
+  font-size: 25.5px;
+  border-radius: 50px;
   background: url('https://cdn-icons-png.flaticon.com/512/622/622669.png') no-repeat right 10px center;
   background-size: 20px 20px;
   background-color: white;
   cursor: text;
+    display: flex;
+
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
 }
 
 /* I: links de navegação */
@@ -114,6 +111,14 @@ footer {
 
 .a1:hover {
   text-decoration: underline;
+}
+
+.a2 {
+
+}
+
+.a2:hover{
+  
 }
 /* K: LOGO */
 .logo {
