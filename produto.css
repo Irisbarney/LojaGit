@@ -55,7 +55,7 @@ header {
   justify-content: space-between;
   background-color: #05203d;
   padding: 20px;
-  border-radius: 0px 0px 15px 15px;
+  border-bottom: 2px solid rgb(236, 198, 128);
 }
 
 footer {
@@ -63,7 +63,7 @@ footer {
   padding: 20px;
   color: white;
   text-align: center;
-  border-radius: 15px 15px 0px 0px;
+  border-top: 2px solid rgb(236, 198, 128);
 }
 
 /* TOPO */
@@ -134,11 +134,11 @@ footer {
 
 .botaosugerir{
   display: flex;
-  padding: 10px;
+  padding: 8px;
   border: 2px solid rgb(236, 198, 128);
-  border-radius: 10px;
+  border-radius: 15px;
   font-size: 15px;
-  margin-top: 2px;
+  font-weight: bold;
   background-color: transparent;
   color: white;
   cursor: pointer;
@@ -446,7 +446,6 @@ footer {
     align-items: left;
     justify-content: left;
     flex-wrap: wrap;
-   
   }
 
   .navegacao {
