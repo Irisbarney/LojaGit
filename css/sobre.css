@@ -54,8 +54,8 @@ main {
 }
 
 header {
-  display: flex;
   margin-bottom: 50px;
+  display: flex;
   justify-content: space-between;
   background-color: #05203d;
   padding: 20px;
@@ -195,48 +195,18 @@ footer {
 }
 
 /* media query, se ajustar de acordo com a tela do dispositivo */
-@media (max-width: 900px) {
-
-  header {
-    flex-direction: column;
-  }
-
-  .cabecario {
-    flex-direction: row;
-    align-items: left;
-    justify-content: left;
-    flex-wrap: wrap;
-  }
-
-  .input-search{
-    width: 250px;
-  }
-
-  .divdobotaosugerir{
-    width: 180px;
-    padding: 0px;
-    margin-right: 0px;
-
-  }
-
-  .navegacao {
-    justify-content: left;
-    margin-right: 0px;
-    margin-left: 22px;
-    margin-top: 25px;
-  }
-
-}
-
 @media (max-width: 550px) {
+  
     header {
     flex-direction: column;
+    padding: 0px;
+    padding-bottom: 20px;
   }
 
   .cabecario {
-    flex-direction: row;
-    align-items: left;
-    justify-content: left;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
@@ -247,10 +217,59 @@ footer {
     margin-right: 0px;
   }
 
+  .input-search{
+    width: 500px;
+  }
+
+  .logo{
+    margin-top: -20px;
+    margin-bottom: -30px;
+  }
+
   .navegacao {
-    justify-content: left;
+    justify-content: space-evenly;
+    margin-left: 10px;
     margin-right: 0px;
-    margin-left: 22px;
+    margin-top: 25px;
+  }
+
+}
+
+@media (max-width: 980px) {
+
+    header {
+    flex-direction: column;
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+
+  .cabecario {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .divdobotaosugerir{
+    width: 180px;
+    padding: 0px;
+    margin-right: 90px;
+    margin-right: 0px;
+  }
+
+  .input-search{
+    width: 500px;
+  }
+
+  .logo{
+    margin-top: -20px;
+    margin-bottom: -30px;
+  }
+
+  .navegacao {
+    justify-content: space-evenly;
+    margin-left: 10px;
+    margin-right: 0px;
     margin-top: 25px;
   }
 

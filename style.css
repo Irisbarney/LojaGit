@@ -206,7 +206,7 @@ footer {
   gap: 5px;
 }
 
-/* KI: MEDIA QUERY RESPONSIVA */
+/* media query, se ajustar de acordo com a tela do dispositivo */
 @media (max-width: 550px) {
   
     header {
