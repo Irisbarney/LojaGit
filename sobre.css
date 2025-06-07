@@ -53,21 +53,22 @@ main {
 }
 
 header {
+  margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
   background-color: #05203d;
   padding: 20px;
-  border-radius: 0px 0px 15px 15px;
+  border-bottom: 2px solid rgb(236, 198, 128);
 }
 
 footer {
+  margin-top: 50px;
   background-color: #05203d;
   padding: 20px;
   color: white;
   text-align: center;
-  border-radius: 15px 15px 0px 0px;
+  border-top: 2px solid rgb(236, 198, 128);
 }
-
 
 .sobre-nos {
   display: flex;
@@ -189,7 +190,7 @@ footer {
 }
 
 .contatoemail {
-  color: orange;
+  color: rgb(236, 198, 128);
 }
 
 .logos{
@@ -210,7 +211,7 @@ footer {
 }
 
 /* KI: MEDIA QUERY RESPONSIVA */
-@media (max-width: 780px) {
+@media (max-width: 900px) {
 
   header {
     flex-direction: column;
@@ -221,13 +222,52 @@ footer {
     align-items: left;
     justify-content: left;
     flex-wrap: wrap;
-   
+  }
+
+  .input-search{
+    width: 250px;
+  }
+
+  .divdobotaosugerir{
+    width: 180px;
+    padding: 0px;
+    margin-right: 0px;
+
   }
 
   .navegacao {
-    justify-content: space-evenly;
+    justify-content: left;
     margin-right: 0px;
-    margin-top: 20px;
+    margin-left: 22px;
+    margin-top: 25px;
+  }
+
+}
+
+@media (max-width: 550px) {
+    header {
+    flex-direction: column;
+  }
+
+  .cabecario {
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+
+  .divdobotaosugerir{
+    width: 180px;
+    padding: 0px;
+    margin-right: 90px;
+    margin-right: 0px;
+  }
+
+  .navegacao {
+    justify-content: left;
+    margin-right: 0px;
+    margin-left: 22px;
+    margin-top: 25px;
   }
 
 }
