@@ -120,6 +120,7 @@ footer {
   width: 150px;
   margin-bottom: -30px;
   margin-top: -30px;
+  pointer-events: none;
 }
 
 .divlogo {
@@ -470,7 +471,7 @@ footer {
   }
 
   .logo{
-    margin-top: -20px;
+    margin-top: -30px;
     margin-bottom: -60px;
     width: 200px;
   }
@@ -515,7 +516,7 @@ footer {
   }
 
   .logo{
-    margin-top: -20px;
+    margin-top: -30px;
     margin-bottom: -60px;
     width: 200px;
   }

@@ -158,9 +158,10 @@ footer {
 }
 
 .logo {
-  width: 120px;
-  margin-bottom: -20px;
-  margin-top: -20px;
+  width: 150px;
+  margin-bottom: -30px;
+  margin-top: -30px;
+  pointer-events: none;
 }
 
 .divlogo {
@@ -234,8 +235,9 @@ footer {
   }
 
   .logo{
-    margin-top: -20px;
-    margin-bottom: -30px;
+    margin-top: -30px;
+    margin-bottom: -60px;
+    width: 200px;
   }
 
   .navegacao {
@@ -274,8 +276,9 @@ footer {
   }
 
   .logo{
-    margin-top: -20px;
-    margin-bottom: -30px;
+    margin-top: -30px;
+    margin-bottom: -60px;
+    width: 200px;
   }
 
   .navegacao {
