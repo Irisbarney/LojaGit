@@ -454,6 +454,10 @@ footer {
     flex-wrap: wrap;
   }
 
+  .card{
+    width: 200px;
+  }
+
   .divdobotaosugerir{
     width: 180px;
     padding: 0px;
@@ -467,7 +471,8 @@ footer {
 
   .logo{
     margin-top: -20px;
-    margin-bottom: -30px;
+    margin-bottom: -60px;
+    width: 200px;
   }
 
   .navegacao {
@@ -501,13 +506,18 @@ footer {
     margin-right: 0px;
   }
 
+  .card{
+    width: 200px;
+  }
+
   .input-search{
     width: 500px;
   }
 
   .logo{
     margin-top: -20px;
-    margin-bottom: -30px;
+    margin-bottom: -60px;
+    width: 200px;
   }
 
   .navegacao {
