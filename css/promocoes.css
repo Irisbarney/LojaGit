@@ -21,7 +21,7 @@ body {
 main {
   flex: 1;
   background-color: transparent;
-  margin-top: 150px;
+  padding-top: 150px;
 }
 
 .fundo{
@@ -457,8 +457,8 @@ footer {
     padding-bottom: 20px;
   }
 
-    main{
-    margin-top: 280px;
+  main{
+    padding-top: 150px;
   }
 
   .cabecario {
@@ -500,14 +500,14 @@ footer {
 
 @media (max-width: 900px) {
 
-    header {
+  header {
     flex-direction: column;
     padding: 0px;
     padding-bottom: 20px;
   }
 
   main{
-    margin-top: 280px;
+    padding-top: 150px;
   }
 
   .cabecario {
