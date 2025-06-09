@@ -8,19 +8,21 @@
 html, body {
   height: 100%;
   font-family: 'Roboto', 'Arial', sans-serif;
+  overflow-y: scroll;
 }
 
 /* ESTRUTURA FLEXÍVEL */
 body {
   display: flex;
   flex-direction: column;
+  width: 100vw;
+  color: white;
 }
 
 main {
   flex: 1;
   background-color: transparent;
-  padding: 30px;
-  color: white;
+  margin-top: 150px;
 }
 
 .fundo{
@@ -54,11 +56,14 @@ main {
 }
 
 header {
-  margin-bottom: 50px;
   display: flex;
+  z-index: 1;
+  position: fixed;
+  width: 100vw;
+  margin-bottom: 50px;
   justify-content: space-between;
   background-color: #05203d;
-  padding: 20px;
+  padding: 10px;
   border-bottom: 2px solid rgb(236, 198, 128);
 }
 
@@ -107,8 +112,8 @@ footer {
 
 .info h2 {
   font-size: larger;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-top: 40px;
 }
 
 .info ul {
@@ -208,7 +213,7 @@ footer {
 }
 
 /* media query, se ajustar de acordo com a tela do dispositivo */
-@media (max-width: 550px) {
+@media (max-width: 300px) {
   
     header {
     flex-direction: column;
@@ -216,11 +221,20 @@ footer {
     padding-bottom: 20px;
   }
 
+    main{
+    margin-top: 280px;
+    padding: 20px;
+  }
+
   .cabecario {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .card{
+    width: 200px;
   }
 
   .divdobotaosugerir{
@@ -231,7 +245,7 @@ footer {
   }
 
   .input-search{
-    width: 500px;
+    width: 80vw;
   }
 
   .logo{
@@ -249,14 +263,19 @@ footer {
 
 }
 
-@media (max-width: 980px) {
+@media (max-width: 900px) {
 
-    header {
+  header {
     flex-direction: column;
     padding: 0px;
     padding-bottom: 20px;
   }
 
+  main{
+    margin-top: 280px;
+    padding: 20px;
+  }
+  
   .cabecario {
     flex-direction: column;
     align-items: center;
@@ -267,12 +286,15 @@ footer {
   .divdobotaosugerir{
     width: 180px;
     padding: 0px;
-    margin-right: 90px;
-    margin-right: 0px;
+    margin: 0px;
+  }
+
+  .card{
+    width: 200px;
   }
 
   .input-search{
-    width: 500px;
+    width: 80vw;
   }
 
   .logo{
@@ -286,6 +308,7 @@ footer {
     margin-left: 10px;
     margin-right: 0px;
     margin-top: 25px;
+    width: 100%;
   }
 
 }

@@ -1,4 +1,4 @@
-/* reset da página (todo site vem com padding e margin, ai damos reset para não estragar) */
+/* RESET GERAL */
 * {
   margin: 0;
   padding: 0;
@@ -8,19 +8,21 @@
 html, body {
   height: 100%;
   font-family: 'Roboto', 'Arial', sans-serif;
+  overflow-y: scroll;
 }
 
-/* transforma os elementos dentro do corpo em containers, fácil para organizar */
+/* ESTRUTURA FLEXÍVEL */
 body {
   display: flex;
   flex-direction: column;
+  width: 100vw;
+  color: white;
 }
 
 main {
-  flex: 1; /* faz cobrir o máximo de espaço possivel, abreviação de flex-grow*/
+  flex: 1;
   background-color: transparent;
-  color: white;
-  padding: 30px;
+  margin-top: 150px;
 }
 
 .fundo{
@@ -54,11 +56,14 @@ main {
 }
 
 header {
-  margin-bottom: 50px;
   display: flex;
+  z-index: 1;
+  position: fixed;
+  width: 100vw;
+  margin-bottom: 50px;
   justify-content: space-between;
   background-color: #05203d;
-  padding: 20px;
+  padding: 10px;
   border-bottom: 2px solid rgb(236, 198, 128);
 }
 
@@ -132,7 +137,7 @@ footer {
 
 .img-sobre {
   width: 200px;
-  border: 2px solid black;
+  border: 2px solid gold;
   border-radius: 10px 10px 10px 10px;
   margin-top: 30px;
 }
@@ -196,7 +201,7 @@ footer {
 }
 
 /* media query, se ajustar de acordo com a tela do dispositivo */
-@media (max-width: 550px) {
+@media (max-width: 300px) {
   
     header {
     flex-direction: column;
@@ -204,11 +209,20 @@ footer {
     padding-bottom: 20px;
   }
 
+    main{
+    margin-top: 280px;
+    padding: 20px;
+  }
+
   .cabecario {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .card{
+    width: 200px;
   }
 
   .divdobotaosugerir{
@@ -219,7 +233,7 @@ footer {
   }
 
   .input-search{
-    width: 500px;
+    width: 80vw;
   }
 
   .logo{
@@ -237,14 +251,19 @@ footer {
 
 }
 
-@media (max-width: 980px) {
+@media (max-width: 900px) {
 
-    header {
+  header {
     flex-direction: column;
     padding: 0px;
     padding-bottom: 20px;
   }
 
+  main{
+    margin-top: 280px;
+    padding: 20px;
+  }
+  
   .cabecario {
     flex-direction: column;
     align-items: center;
@@ -255,12 +274,15 @@ footer {
   .divdobotaosugerir{
     width: 180px;
     padding: 0px;
-    margin-right: 90px;
-    margin-right: 0px;
+    margin: 0px;
+  }
+
+  .card{
+    width: 200px;
   }
 
   .input-search{
-    width: 500px;
+    width: 80vw;
   }
 
   .logo{
@@ -274,6 +296,7 @@ footer {
     margin-left: 10px;
     margin-right: 0px;
     margin-top: 25px;
+    width: 100%;
   }
 
 }
