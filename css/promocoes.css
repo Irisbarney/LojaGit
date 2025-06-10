@@ -72,6 +72,29 @@ footer {
   border-top: 2px solid rgb(255, 67, 67);
 }
 
+#linkvtopojs {
+  display: none;
+  padding: 18px 15px;
+  text-align: center;
+  z-index: 4;
+  position: fixed;
+  height: 70px;
+  width: 70px;
+  font-size: 22px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: rgb(255, 67, 67);
+  right: 20px;
+  bottom: 100px;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+
+#linkvtopojs:hover{
+  transform: scale(1.1);
+}
+
 .cabecario {
   display: flex;
   align-items: center;
@@ -91,7 +114,6 @@ footer {
 
 /* barra de pesquisa mais a lupa na direita */
 .input-search {
-  width: 19vw;
   padding: 10px 40px 10px 10px;
   font-size: 25.5px;
   border-radius: 50px;
@@ -464,7 +486,7 @@ footer {
   }
 
   .input-search{
-    width: 80vw;
+    width: 500px;
   }
 
   .logo{
@@ -488,7 +510,7 @@ footer {
 
 @media (max-width: 980px) {
 
-    header {
+  header {
     flex-direction: column;
     padding: 0px;
     padding-bottom: 20px;

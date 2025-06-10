@@ -34,3 +34,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+//parte botão voltar
+
+  const btn = document.getElementById("linkvtopojs");
+  console.log("scrolling");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  });
