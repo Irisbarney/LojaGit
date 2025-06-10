@@ -8,14 +8,12 @@
 html, body {
   height: 100%;
   font-family: 'Roboto', 'Arial', sans-serif;
-  overflow-y: scroll;
 }
 
 /* ESTRUTURA FLEXÍVEL */
 body {
   display: flex;
   flex-direction: column;
-  width: 100vw;
 }
 
 main {
@@ -54,12 +52,11 @@ main {
 }
 
 header {
-  display: flex;
-  width: 100vw;
   margin-bottom: 50px;
+  display: flex;
   justify-content: space-between;
   background-color: #05203d;
-  padding: 10px;
+  padding: 20px;
   border-bottom: 2px solid rgb(236, 198, 128);
 }
 
@@ -78,15 +75,14 @@ footer {
 .cabecario {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .navegacao {
-  width: 420px;
   display: flex;
   gap: 40px;
   margin-top: 5px;
-  margin-left: 5px;
+  margin-right: 40px;
   font-size: 15px;
   flex-wrap: wrap;
   font-weight: bold;
@@ -95,8 +91,7 @@ footer {
 
 /* barra de pesquisa mais a lupa na direita */
 .input-search {
-  display: flex;
-  width: 17vw;
+  width: 19vw;
   padding: 10px 40px 10px 10px;
   font-size: 25.5px;
   border-radius: 50px;
@@ -104,6 +99,7 @@ footer {
   background-size: 20px 20px;
   background-color: white;
   cursor: text;
+  display: flex;
   border: none;
   border-radius: 10px;
   font-size: 15px;
@@ -115,7 +111,6 @@ footer {
   color: white;
   text-decoration: none;
   transition: 0.8s ease;
-  padding: 5px;
 }
 
 .linksdenavegacao:hover {
@@ -339,8 +334,8 @@ footer {
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 300%;
   border-radius: 10px 10px 10px 10px;
   border: 2px solid rgb(236, 198, 128);
   box-shadow: 5px 5px rgba(0, 0, 0, 0.268);
@@ -348,7 +343,7 @@ footer {
   color: white;
   font-size: 13px;
   font-family: 'Roboto', sans-serif;
-  z-index: 2;
+  z-index: 1;
 }
 
 .sugestao h1 {
@@ -446,7 +441,7 @@ footer {
 }
 
 /* media query, se ajustar de acordo com a tela do dispositivo */
-@media (max-width: 300px) {
+@media (max-width: 550px) {
   
     header {
     flex-direction: column;
@@ -459,10 +454,6 @@ footer {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-  }
-
-  .card{
-    width: 200px;
   }
 
   .divdobotaosugerir{
@@ -489,16 +480,20 @@ footer {
     margin-top: 25px;
   }
 
+  .card{
+    width: 200px;
+  }
+
 }
 
-@media (max-width: 900px) {
+@media (max-width: 980px) {
 
-  header {
+    header {
     flex-direction: column;
     padding: 0px;
     padding-bottom: 20px;
   }
-  
+
   .cabecario {
     flex-direction: column;
     align-items: center;
@@ -509,11 +504,8 @@ footer {
   .divdobotaosugerir{
     width: 180px;
     padding: 0px;
-    margin: 0px;
-  }
-
-  .card{
-    width: 200px;
+    margin-right: 90px;
+    margin-right: 0px;
   }
 
   .input-search{
@@ -531,7 +523,10 @@ footer {
     margin-left: 10px;
     margin-right: 0px;
     margin-top: 25px;
-    width: 100%;
+  }
+
+  .card{
+    width: 200px;
   }
 
 }
