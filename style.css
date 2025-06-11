@@ -78,7 +78,7 @@ footer {
   display: none;
   padding: 18px 15px;
   text-align: center;
-  z-index: 4;
+  z-index: 1;
   position: fixed;
   height: 70px;
   width: 70px;

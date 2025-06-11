@@ -1,16 +1,18 @@
+// cresce o card
 function crescercard(botao) {
   const card = botao.closest('.card');
   card.classList.toggle('expanded');
   botao.textContent = card.classList.contains('expanded') ? 'Menos' : 'Mais';
 }
 
-// Exibe o formulário ao clicar no botão "Sugerir Produto"
+// mostra o formulário
 document.addEventListener('DOMContentLoaded', () => {
     const botaoSugerir = document.querySelector('.botaosugerir');
     const formSugestao = document.getElementById('formSugestao');
-
+    const fundoEscuro = document.getElementById('fundoEscuro')
     botaoSugerir.addEventListener('click', () => {
         formSugestao.style.display = 'flex';
+        fundoEscuro.style.display = 'block';
     });
 });
 
@@ -35,10 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-//parte botão voltar
-
+// parte botão voltar
   const btn = document.getElementById("linkvtopojs");
-  console.log("scrolling");
   window.addEventListener("scroll", () => {
     if (window.scrollY > 200) {
       btn.style.display = "block";
